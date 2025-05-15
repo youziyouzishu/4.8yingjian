@@ -12,7 +12,7 @@ use Tinywan\Jwt\JwtToken;
 
 class AccountController extends Base
 {
-    protected array $noNeedLogin = [];
+    protected array $noNeedLogin = ['*'];
 
     function login(Request $request)
     {
@@ -48,5 +48,11 @@ class AccountController extends Base
             'token' => $token,
             'user' => $user
         ]);
+    }
+
+    function refreshToken()
+    {
+        $res = JwtToken::refreshToken();
+        return $this->success('成功', $res);
     }
 }
