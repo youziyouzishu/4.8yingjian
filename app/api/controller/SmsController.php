@@ -103,4 +103,5 @@ class SmsController extends Base
             return $this->fail('验证码不正确');
         }
     }
+
 }

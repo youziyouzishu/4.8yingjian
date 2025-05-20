@@ -37,7 +37,8 @@
     "webman/redis-queue": "^2.1",
     "yansongda/pay": "^3.7",
     "webman/redis": "^2.1",
-    "webman/admin": "^2.1"
+    "webman/admin": "^2.1",
+    "illuminate/events": "^11.44"
   },
   "suggest": {
     "ext-event": "For better performance. "
